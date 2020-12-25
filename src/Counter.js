@@ -5,8 +5,12 @@ class Counter extends React.Component {
     count: 0,
   };
 
+  // When adding an event listener function to a React class, use an arrow function to make sure that this is referring to the class instance.
   handleButtonClick = () => {
-    console.log(this.state.count);
+    const newCount = this.state.count + 1;
+    this.setState({
+      count: newCount,
+    });
   };
 
   render() {
