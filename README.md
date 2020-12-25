@@ -1,3 +1,11 @@
+# Upcoming Features
+
+- Create a drop down box that allows a user to select how much to add to the counter
+- Create a form
+- Create a handleSubmit function on the submit button
+- Use the value of the dropdown and assign it to the step prop
+- Use the step prop to update this.state.step of the Counter component
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
