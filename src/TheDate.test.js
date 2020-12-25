@@ -10,7 +10,7 @@ describe("TheDate Component", () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it.skip("should render the UI as expected", () => {
-    expect(renderer.create(<TheDate />).toJson()).toMatchSnapshot();
+  it("renders the UI as expected", () => {
+    expect(renderer.create(<TheDate />).toJSON()).toMatchSnapshot();
   });
 });
