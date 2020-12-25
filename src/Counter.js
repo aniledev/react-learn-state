@@ -1,12 +1,18 @@
 import React from "react";
 
 class Counter extends React.Component {
-  state = {
-    count: 0,
-  };
+  constructor(props) {
+    // console.log("props in constructor", props);
+    super(props);
+    this.state = {
+      count: 0,
+    };
+  }
 
   // When adding an event listener function to a React class, use an arrow function to make sure that this is referring to the class instance.
   handleButtonClick = () => {
+    // console.log("props in handlebutton", this.props);
+    // console.log("state in handleclick", this.state);
     const newCount = this.state.count + 1;
     this.setState({
       count: newCount,
