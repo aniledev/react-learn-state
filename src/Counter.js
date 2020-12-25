@@ -26,6 +26,7 @@ class Counter extends React.Component {
   render() {
     return (
       <div>
+        <h4>Tally Counter: Using State</h4>
         <p>The current count: {this.state.count}</p>
         <button onClick={this.handleButtonClick}>Add {this.state.step}</button>
       </div>

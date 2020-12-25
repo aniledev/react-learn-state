@@ -27,7 +27,12 @@ class TheDate extends React.Component {
   render() {
     console.log("render");
     // toLocaleString() displays the date in a human-readable format
-    return <div>{this.state.datetime.toLocaleString()}</div>;
+    return (
+      <div>
+        <h4>Display the Date Using State</h4>
+        {this.state.datetime.toLocaleString()}
+      </div>
+    );
   }
 }
 
