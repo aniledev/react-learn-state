@@ -27,7 +27,7 @@ class Counter extends React.Component {
     return (
       <div>
         <p>The current count: {this.state.count}</p>
-        <button onClick={this.handleButtonClick}>Add 1</button>
+        <button onClick={this.handleButtonClick}>Add {this.state.step}</button>
       </div>
     );
   }
