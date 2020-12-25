@@ -8,9 +8,24 @@ class TheDate extends React.Component {
     this.state = {
       datetime: new Date(),
     };
+    console.log("constructor");
+  }
+
+  componentDidMount() {
+    console.log("componentDidMount");
+    this.interval = setInterval(() => {
+      console.log("setInterval");
+      this.setState({
+        datetime: new Date(),
+      });
+    }, 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
   render() {
-    console.log(this.state);
+    console.log("render");
     // toLocaleString() displays the date in a human-readable format
     return <div>{this.state.datetime.toLocaleString()}</div>;
   }
