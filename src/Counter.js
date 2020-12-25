@@ -30,3 +30,7 @@ class Counter extends React.Component {
 }
 
 export default Counter;
+
+// Make a number prop called step.
+// The step prop can control how much we add to the count each time the button is clicked.
+//  Don't forget to setup a default (static defaultProps) for the step prop with the number 1.

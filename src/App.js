@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <TheDate />
       {/* This is just to show that props and state can coexist */}
-      <Counter count={123} />
+      <Counter step={1} />
     </div>
   );
 }
