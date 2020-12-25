@@ -5,9 +5,9 @@ class Counter extends React.Component {
     count: 0,
   };
 
-  handleButtonClick() {
-    console.log("clicked!");
-  }
+  handleButtonClick = () => {
+    console.log(this.state.count);
+  };
 
   render() {
     return (
